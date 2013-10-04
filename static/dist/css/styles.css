@@ -1,0 +1,82 @@
+.padding15 {
+	padding: 15px;
+}
+.green-container {
+	background-color: #03c676;
+	background: #03c676;
+}
+.font-clr-drkgreen {
+	color: #115c3e!important;
+}
+.font16 {
+	font-size: 16px;
+}
+.margin-top-15 {
+	margin-top: 15px;
+} 
+.text-center {
+	text-align: center;
+}
+.clear {
+	clear:both;
+}
+.contact-form-container {
+	background-color: #03c676;
+	background: #03c676;
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 480px;
+	position: relative;
+	overflow: hidden;
+}
+.height480 {
+	height: 480px;
+}
+.pitch-padding {
+	padding: 113px;
+}
+.main-pitch {
+	font-size: 3.0em;
+	font-family: 'Gotham Rounded SSm A','Gotham Rounded SSm B',sans-serif;
+	font-weight: 300;
+	color: #fff;
+	position: relative;
+	text-align: center;
+}
+.sub-pitch {
+	font-size: 18px;
+	font-family: 'Gotham Rounded SSm A','Gotham Rounded SSm B',sans-serif;
+	font-weight: 400;
+	position: relative;
+	text-align: center;
+}
+.fixed850 {
+	width: 850px;
+}
+.margin-top-25 {
+	margin-top: 25px;
+}
+.text-center {
+	text-align: center;
+}
+.font-clr-white {
+	color: #fff;
+}
+.font18, .codepair-sub-pitch {
+	font-size: 18px;
+}
+.font-w-500 {
+	font-weight: 500;
+}
+.font-w-300 {
+	font-weight: 300;
+}
+.margin-top-bott-25 {
+	margin: 25px auto;
+}
+.goth-rounded {
+	font-family: 'Gotham Rounded SSm A','Gotham Rounded SSm B',sans-serif;
+}
+.font-clr-ltgreen, ul.hov-green li:hover, ul.hov-green li:hover a {
+	color: #03c676;
+}

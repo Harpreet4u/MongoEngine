@@ -1,0 +1,126 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="{% static 'dist/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+
+    <link href="{% static 'dist/css/styles.css' %}" rel="stylesheet" media="screen">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- <h1>Hello, world!</h1>  -->
+
+	<div class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+				<a class="navbar-brand">InterviewZone</a>
+
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="{%url 'index'%}">HOME</a></li>
+						<!--<li><a href="#">Blog</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Twitter</a></li>
+								<li><a href="#">Facebook</a></li>
+								<li><a href="#">Tumblr</a></li>
+								<li><a href="#">LinkedIn</a></li>
+
+							</ul>
+						</li> -->
+						<li><a href="{% url 'about' %}">About</a></li>
+						<li><a href="{% url 'contact' %}">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="jumbotron">
+				<center><h1>Solve Challenges</h1>
+				<p>Solve challenges given below and get an interview call.</p>
+				</center>
+			</div>
+		</div>
+
+		<div class="clear"></div>
+
+		<div class="container">
+			{% for problem in problems %}
+				<a href="{% url 'problem' problem.id|urlencode %}" class="goth-rounded font18 font-w-500 font-clr-ltgreen">{{ problem.problem_name }}</a><br>
+			{% endfor %}
+
+		</div>
+
+
+
+		<div class="green-container padding15">
+			<div class="col-12">
+				<p class="margin-top-15 font16 text-center font-clr-drkgreen">1,000+ COMPANIES USE OUR PRODUCT FOR TECHNICAL INTERVIEWS</p>
+			</div>
+			<div class="clear"></div>
+			<div style="text-align:center;" class="container">
+			<div class="row">
+				<div class="col-lg-4 col-sm-12 col-xs-12">
+                    <div class="col-6 padding15"><img src="https://istrtcdn.com/recruit2/public/images/img_fb_logo.png" class="img-responsive" /></div>
+                    <div class="col-6 padding15"><img src="https://istrtcdn.com/recruit2/public/images/img_amz_logo.png" class="img-responsive" /></div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-xs-12">
+                    <div class="col-6 padding15"><img style="margin-left:-48px;" src="https://istrtcdn.com/recruit2/public/images/img_yah_logo.png" class="img-responsive" /></div>
+                    <div class="col-6 padding15"><img src="https://istrtcdn.com/recruit2/public/images/img_mic_logo.png" class="img-responsive" /></div>
+                </div>
+                <div class="col-lg-4 col-sm-12 col-xs-12">
+                    <div class="col-6 padding15"><img style="margin-left:-35px;" src="https://istrtcdn.com/recruit2/public/images/img_sky_logo.png" class="img-responsive" /></div>
+                    <div class="col-6 padding15"><img src="https://istrtcdn.com/recruit2/public/images/img_evr_logo.png" class="img-responsive" /></div>
+                </div>
+			</div>
+		</div><!-- end .container -->
+		<div class="clear"></div>
+			
+		</div>
+		
+		<!--<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+
+				</div>
+			</div>
+		</div>
+		-->
+
+
+
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<p class="navbar-text pull-left">Site built By Harpreet Singh</p>
+				<a href="http://github.com/Harpreet4u" class="navbar-btn btn-danger btn pull-right">Subscribe on Github</a>
+			</div>
+
+		</div>
+
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'dist/js/bootstrap.min.js' %}"></script>
+  </body>
+</html>
